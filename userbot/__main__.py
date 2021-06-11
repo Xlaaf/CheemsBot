@@ -10,7 +10,7 @@ from sys import argv
 
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 
-from userbot import LOGS, bot
+from userbot import LOGS, ex
 from userbot.modules import ALL_MODULES
 
 INVALID_PH = (
@@ -36,6 +36,6 @@ LOGS.info(
 )
 
 if len(argv) not in (1, 3, 4):
-    bot.disconnect()
+    ex.disconnect()
 else:
-    bot.run_until_disconnected()
+    ex.run_until_disconnected()
